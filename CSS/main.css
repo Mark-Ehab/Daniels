@@ -1,0 +1,804 @@
+/*---------------------------------------- 
+# Custom Styles File for Daniels         #
+-----------------------------------------*/
+
+/*---------------------------------------- 
+# Definition of Fonts Used in the Site
+------------------------------------------*/
+@font-face {
+  font-family: "Montserrat-Black";
+  src: url("../webfonts/Montserrat-Black.woff2") format("woff2"),
+    url("../webfonts/Montserrat-Black.woff") format("woff"),
+    url("../webfonts/Montserrat-Black.ttf") format("ttf");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat-ExtraBold";
+  src: url("../webfonts/Montserrat-ExtraBold.woff2") format("woff2"),
+    url("../webfonts/Montserrat-ExtraBold.woff") format("woff"),
+    url("../webfonts/Montserrat-ExtraBold.ttf") format("ttf");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../webfonts/Montserrat-Bold.woff2") format("woff2"),
+    url("../webfonts/Montserrat-Bold.woff") format("woff"),
+    url("../webfonts/Montserrat-Bold.woff") format("ttf");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  src: url("../webfonts/Montserrat-SemiBold.woff2") format("woff2"),
+    url("../webfonts/Montserrat-SemiBold.woff") format("woff"),
+    url("../webfonts/Montserrat-SemiBold.ttf") format("ttf");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url("../webfonts/Montserrat-Medium.woff2") format("woff2"),
+    url("../webfonts/Montserrat-Medium.woff") format("woff"),
+    url("../webfonts/Montserrat-Medium.ttf") format("ttf");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("../webfonts/Montserrat-Regular.woff2") format("woff2"),
+    url("../webfonts/Montserrat-Regular.woff") format("woff"),
+    url("../webfonts/Montserrat-Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat-ExtraLight";
+  src: url("../webfonts/Montserrat-ExtraLight.woff2") format("woff2"),
+    url("../webfonts/Montserrat-ExtraLight.woff") format("woff"),
+    url("../webfonts/Montserrat-ExtraLight.ttf") format("ttf");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("../webfonts/Poppins-Regular.woff2") format("woff2"),
+    url("../webfonts/Poppins-Regular.woff") format("woff"),
+    url("../webfonts/Poppins-Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("../webfonts/Poppins-SemiBold.woff2") format("woff2"),
+    url("../webfonts/Poppins-SemiBold.woff") format("woff"),
+    url("../webfonts/Poppins-SemiBold.ttf") format("ttf");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("../webfonts/Poppins-Bold.woff2") format("woff2"),
+    url("../webfonts/Poppins-Bold.woff") format("woff"),
+    url("../webfonts/Poppins-Bold.ttf") format("ttf");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*---------------------------------------- 
+# Definition of Custom Variables in root
+# Pseudo Class 
+------------------------------------------*/
+:root {
+  --p-color: RGB(78, 78, 78);
+  --h2-color: rgb(30, 30, 30);
+  --h3-color: rgb(30, 30, 30);
+  --main-color: rgb(255, 255, 255);
+  --secondary-color: rgb(28, 28, 28);
+  --section-bg-grey-color: #f7f7f7;
+  --p-color: RGB(116, 129, 130);
+  --h2-color: RGB(52, 52, 52);
+  --h3-color: RGB(52, 52, 52);
+}
+/*---------------------------------------- 
+# Generic Styles  
+------------------------------------------*/
+body {
+  background-color: var(--main-color);
+  font-size: 15px;
+}
+p {
+  color: var(--p-color);
+  font-family: "Poppins-Regular", sans-serif;
+}
+h1 {
+  color: var(--main-color);
+  font-family: "Montserrat-ExtraLight", sans-serif;
+}
+h2 {
+  color: var(--h2-color);
+  font-size: 2.5rem;
+  font-family: "Montserrat-Black", sans-serif;
+}
+h3 {
+  font-family: "Montserrat-ExtraBold";
+  color: var(--h3-color);
+  font-size: 1.125rem;
+}
+a {
+  text-decoration: none;
+}
+.btn {
+  --bs-btn-padding-x: 1.875rem;
+  --bs-btn-padding-y: 0.625rem;
+  --bs-btn-font-family: "Poppins-Regular", sans-serif;
+  --bs-btn-font-size: 0.8125rem;
+  --bs-btn-font-weight: 400;
+  --bs-btn-line-height: 1.1607rem;
+  --bs-btn-color: var(--bs-body-color);
+  --bs-btn-bg: transparent;
+  --bs-btn-border-width: var(--bs-border-width);
+  --bs-btn-border-color: transparent;
+  --bs-btn-border-radius: var(--bs-border-radius);
+  --bs-btn-hover-border-color: transparent;
+  --bs-btn-box-shadow: inset 0 0.0625rem 0 rgba(255, 255, 255, 0.15),
+    0 0.0625rem 0.0625rem rgba(0, 0, 0, 0.075);
+  --bs-btn-disabled-opacity: 0.65;
+  --bs-btn-focus-box-shadow: 0 0 0 0.25rem
+    rgba(var(--bs-btn-focus-shadow-rgb), 0.5);
+}
+.btn-custom-main {
+  --bs-btn-color: var(--main-color);
+  --bs-btn-bg: rgb(28, 28, 28);
+  --bs-btn-border-color: rgb(28, 28, 28);
+  --bs-btn-hover-border-color: rgb(28, 28, 28);
+  transition: 0.5s background-color;
+}
+.btn-custom-main:hover {
+  background-color: var(--main-color);
+}
+.btn-custom-secondary {
+  --bs-btn-color: rgb(28, 28, 28);
+  --bs-btn-bg: var(--main-color);
+  --bs-btn-border-color: rgb(28, 28, 28);
+  --bs-btn-hover-border-color: rgb(28, 28, 28);
+  transition: 0.5s background-color, 0.5s color;
+}
+.btn-custom-secondary:hover {
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+}
+/*---------------------------------------- 
+# Nav Bar Section Custom Styles  
+------------------------------------------*/
+#navbar {
+  --bs-navbar-color: var(--main-color);
+  --bs-navbar-hover-color: 0;
+  --bs-navbar-active-color: var(--main-color);
+  --bs-navbar-toggler-focus-width: 0rem;
+  padding-block: 1.25rem 1.875rem;
+  margin-bottom: 1.25rem;
+  background-color: transparent;
+}
+#navbar:not(:has(.nav-link[href="#home"].active)) {
+  background-color: var(--main-color);
+  --bs-navbar-color: var(--secondary-color);
+  --bs-navbar-active-color: var(--secondary-color);
+  --bs-navbar-brand-color: var(--secondary-color);
+  --bs-navbar-brand-hover-color: var(--secondary-color);
+  padding-block: 0;
+  box-shadow: 0 1.875rem 3.125rem rgba(0, 0, 0, 0.05);
+}
+#navbar:not(:has(.nav-link[href="#home"].active)) .nav-header {
+  min-height: 3.875rem;
+}
+#navbar .navbar-brand {
+  --bs-navbar-brand-padding-y: 0;
+  --bs-navbar-brand-margin-end: 0;
+  --bs-navbar-brand-font-size: 1.125rem;
+  --bs-navbar-brand-color: var(--main-color);
+  --bs-navbar-brand-hover-color: var(--main-color);
+  font-family: "Montserrat-ExtraBold", sans-serif;
+  padding-top: 1.25rem;
+  letter-spacing: 0.0625rem;
+}
+#navbar:not(:has(.nav-link[href="#home"].active)) .navbar-brand {
+  --bs-navbar-brand-color: var(--secondary-color);
+  --bs-navbar-brand-hover-color: var(--secondary-color);
+  padding-top: 0.125rem;
+}
+#navbar button {
+  margin-top: 1rem;
+}
+#navbar button i {
+  font-size: 1.5rem;
+  color: var(--main-color);
+}
+#navbar:not(:has(.nav-link[href="#home"].active)) button {
+  margin-top: 0;
+}
+#navbar:not(:has(.nav-link[href="#home"].active)) button i {
+  color: var(--secondary-color);
+}
+#navbar:not(:has(.nav-link[href="#home"].active)) .nav-item .active::after {
+  background-color: var(--secondary-color);
+}
+#navbar:not(:has(.nav-link[href="#home"].active)) .nav-item .nav-link {
+  --bs-nav-link-hover-color: var(--secondary-color);
+}
+#navbar .collapse {
+  /* padding-inline: 0; */
+  padding-inline: -0.75rem;
+}
+#navbar .collapse .navbar-nav {
+  background-color: var(--main-color);
+  padding-inline: 0.9375rem;
+  padding-bottom: 0.9375rem;
+}
+#navbar:not(:has(.nav-link[href="#home"].active)) .collapse .navbar-nav {
+  align-self: center;
+  border-top: 0.0625rem solid rgba(12, 12, 12, 0.04);
+}
+#navbar .collapse .navbar-nav .nav-item {
+  --bs-navbar-nav-link-padding-x: 0;
+  margin-inline: 1.25rem;
+  margin-top: 1.5625rem;
+}
+#navbar:not(:has(.nav-link[href="#home"].active))
+  .collapse
+  .navbar-nav
+  .nav-item {
+  margin-top: 1.5625rem;
+  align-self: center;
+}
+#navbar .collapse .navbar-nav .nav-item .nav-link {
+  position: relative;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 0.875rem;
+  padding: 0;
+  --bs-nav-link-color: var(--secondary-color);
+  --bs-nav-link-hover-color: var(--secondary-color);
+}
+#navbar .collapse .navbar-nav .nav-item .nav-link::after {
+  content: "";
+  background-color: var(--secondary-color);
+  position: relative;
+  left: 0;
+  width: 0;
+  height: 0.125rem;
+  display: block;
+  transition: 0.75s width;
+}
+#navbar .collapse .navbar-nav .nav-item .active {
+  color: var(--secondary-color);
+}
+#navbar .collapse .navbar-nav .nav-item .active::after {
+  width: 100%;
+}
+/*---------------------------------------- 
+# Header Section Custom Styles  
+------------------------------------------*/
+#home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url(./../images/bg.jpg);
+  background-position: 0 0;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+#home .container > span {
+  font-family: "Montserrat-ExtraBold", sans-serif;
+  font-size: 3.125rem;
+  margin-bottom: 0.625rem;
+}
+#home .container h1 {
+  font-size: 1.875rem;
+}
+#home .container h1 > span {
+  font-family: "Montserrat-Regular", sans-serif;
+}
+#home .container .social-media-icons {
+  margin-top: 1.875rem;
+}
+#home .container .social-media-icons .icon {
+  color: var(--main-color);
+  width: 2.1875rem;
+  height: 2.1875rem;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*---------------------------------------- 
+# About Section Custom Styles  
+------------------------------------------*/
+#about {
+  padding-block: 6.25rem 4.375rem;
+}
+#about .inner figure {
+  padding-left: 1.875rem;
+  margin-bottom: 5rem;
+}
+#about .inner figure::after {
+  content: "";
+  position: absolute;
+  background-image: url(./../images/dots.png);
+  background-repeat: repeat;
+  width: 80%;
+  height: 80%;
+  left: 0;
+  bottom: -1.875rem;
+  z-index: -1;
+}
+#about .inner h2 {
+  font-size: 1.875rem;
+  font-family: "Montserrat-ExtraBold", sans-serif;
+  margin-bottom: 0.3125rem;
+  font-weight: 800;
+  line-height: 2.0625rem;
+}
+#about .inner > span {
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 0.875rem;
+  color: rgb(153, 153, 153);
+  letter-spacing: 0.125rem;
+  margin-bottom: 1.25rem;
+}
+#about .inner p {
+  margin-bottom: 1.875rem;
+}
+#about .inner p span {
+  font-family: "Poppins-Bold", sans-serif;
+}
+#about .progress {
+  --bs-progress-height: 1.51825rem;
+  --bs-progress-font-size: 0.8125rem;
+  --bs-progress-bg: var(--bs-secondary-bg);
+  --bs-progress-border-radius: 0.3125rem;
+  --bs-progress-box-shadow: var(--bs-box-shadow-inset);
+  --bs-progress-bar-color: #fff;
+  --bs-progress-bar-bg: rgb(28, 28, 28);
+  margin-bottom: 1.875rem;
+  box-shadow: 0 0.125rem 0.4375rem rgba(0, 0, 0, 0.15) inset;
+}
+#about .progress .progress-bar {
+  padding-block: 0.3125rem;
+  padding-inline: 0.625rem;
+  min-height: 0.89325rem;
+  border-radius: 0.3125rem;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+/*---------------------------------------- 
+# Services Section Custom Styles  
+------------------------------------------*/
+#services {
+  padding-block: 6.25rem 4.375rem;
+  background-color: var(--section-bg-grey-color);
+}
+#services header h2 {
+  margin-bottom: 5rem;
+  width: fit-content;
+  z-index: 1;
+}
+#services header h2::before {
+  content: "";
+  width: 100%;
+  height: 1.875rem;
+  background-image: url(./../images/dots.png);
+  background-repeat: repeat;
+  position: absolute;
+  left: 0;
+  bottom: -0.625rem;
+  z-index: -1;
+}
+#services .inner {
+  padding-block: 3.125rem;
+  padding-inline: 1.25rem;
+}
+#services .inner > .icon {
+  width: 4.375rem;
+  height: 4.375rem;
+  border-radius: 50%;
+  background-color: rgb(247, 247, 247);
+  margin-bottom: 1.25rem;
+  transition: 0.5s background-color;
+}
+#services .inner:hover > .icon {
+  background-color: lab(10.27% 0 0);
+}
+#services .inner > .icon i {
+  font-size: 1.875rem;
+  transition: 0.5s color;
+}
+#services .inner:hover > .icon i {
+  color: var(--main-color);
+}
+#services .inner > h3 {
+  margin-bottom: 0.9375rem;
+}
+#services .inner > p {
+  font-size: 0.875rem;
+  word-spacing: 0.125rem;
+}
+/*---------------------------------------- 
+# Portfolio Section Custom Styles  
+------------------------------------------*/
+#works {
+  padding-block: 6.25rem 4.375rem;
+  background-color: var(--main-color);
+}
+#works header h2 {
+  margin-bottom: 5rem;
+  width: fit-content;
+  z-index: 1;
+}
+#works header h2::before {
+  content: "";
+  width: 100%;
+  height: 1.875rem;
+  background-image: url(./../images/dots.png);
+  background-repeat: repeat;
+  position: absolute;
+  left: 0;
+  bottom: -0.625rem;
+  z-index: -1;
+}
+#works .nav {
+  --bs-nav-link-padding-x: 0rem;
+  --bs-nav-link-padding-y: 0rem;
+  --bs-nav-link-font-weight: 700;
+  --bs-nav-link-color: RGB(34, 34, 34);
+  --bs-nav-link-hover-color: RGB(34, 34, 34);
+  margin-bottom: 3.125rem;
+  column-gap: 1.875rem;
+}
+#works .nav .nav-item .nav-link {
+  position: relative;
+  font-family: "Poppins-Bold", sans-serif;
+  font-size: 1rem;
+}
+#works .nav .nav-item .nav-link.active {
+  --bs-nav-pills-link-active-color: RGB(34, 34, 34);
+  --bs-nav-pills-link-active-bg: transparent;
+  position: relative;
+}
+#works .nav .nav-item .nav-link::after {
+  content: "";
+  background-color: RGB(34, 34, 34);
+  position: absolute;
+  left: 0;
+  bottom: -0.3125rem;
+  width: 0;
+  height: 0.125rem;
+  transition: 0.5s width;
+}
+#works .nav .nav-item .active::after {
+  width: 100%;
+}
+#works .tab-content .tab-pane .inner figure .overlay-layer {
+  background-color: rgba(255, 255, 255, 0.95);
+  height: calc(100% - 0.625rem);
+  top: 0.625rem;
+  bottom: 0.3125rem;
+  left: 0.3125rem;
+  right: 0.3125rem;
+  opacity: 0;
+  transition: 0.5s top ease-in-out, 0.5s opacity ease-in-out;
+}
+#works .tab-content .tab-pane .inner figure:hover .overlay-layer {
+  top: 0.3125rem;
+  opacity: 1;
+}
+#works .tab-content .tab-pane .inner figure .overlay-layer span {
+  letter-spacing: 0.125rem;
+  transform: translateY(-0.9375rem);
+  transition: 0.5s transform;
+}
+#works .tab-content .tab-pane .inner figure .overlay-layer .icons a {
+  width: 1.875rem;
+  height: 1.875rem;
+  border-radius: 50%;
+  background-color: black;
+  border: black 0.0417rem solid;
+  padding: 0.0625rem 0.375rem;
+  color: var(--main-color);
+  transform: translateY(0.9375rem);
+  transition: 0.5s color, 0.5s background-color, 0.5s transform;
+}
+#works .tab-content .tab-pane .inner figure:hover .overlay-layer span {
+  transform: translateY(0);
+}
+#works .tab-content .tab-pane .inner figure:hover .overlay-layer .icons a {
+  transform: translateY(0);
+}
+#works .tab-content .tab-pane .inner figure .overlay-layer .icons a:hover {
+  color: black;
+  background-color: var(--main-color);
+}
+#works .modal-content {
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  outline: 0;
+}
+#works .modal-header {
+  border-bottom: 0;
+}
+/*---------------------------------------- 
+# Clients Section Custom Styles  
+------------------------------------------*/
+#clients {
+  padding-block: 6.25rem;
+  background-color: var(--section-bg-grey-color);
+}
+#clients header h2 {
+  margin-bottom: 5rem;
+  width: fit-content;
+  z-index: 1;
+}
+#clients header h2::before {
+  content: "";
+  width: 100%;
+  height: 1.875rem;
+  background-image: url(./../images/dots.png);
+  background-repeat: repeat;
+  position: absolute;
+  left: 0;
+  bottom: -0.625rem;
+  z-index: -1;
+}
+#clients figure img {
+  width: 5.625rem;
+  height: 5.625rem;
+  border-radius: 50%;
+}
+#clients article .first-span {
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 1rem;
+  color: RGB(52, 52, 52);
+  margin-block: 1.875rem 0.3125rem;
+}
+#clients article .second-span {
+  font-family: "Poppins-SemiBold", sans-serif;
+  font-size: 0.75rem;
+  color: RGB(136, 136, 136);
+  margin-bottom: 1.875rem;
+}
+#clients article p {
+  font-family: "Poppins-Regular";
+  line-height: 1.5rem;
+}
+#clients .carousel-indicators > button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgb(214, 214, 214);
+  transform: 0.5s background-color;
+}
+#clients .carousel-indicators > button.active {
+  background-color: rgb(134, 151, 145);
+}
+#clients .carousel-indicators > button:hover {
+  background-color: rgb(134, 151, 145);
+}
+/*---------------------------------------- 
+# Stats Section Custom Styles  
+------------------------------------------*/
+#stats-counter {
+  padding-block: 6.25rem 4.375rem;
+  background-color: var(--main-color);
+}
+#stats-counter .inner .stats-icon {
+  font-size: 1.875rem;
+  margin-bottom: 0.9375rem;
+}
+#stats-counter .inner > span:nth-child(2) {
+  font-family: "Montserrat-Black", sans-serif;
+  font-size: 1.875rem;
+  margin-bottom: 0.9375rem;
+}
+#stats-counter .inner > span:nth-child(3) {
+  font-family: "Poppins-SemiBold", sans-serif;
+  margin-bottom: 1.875rem;
+  color: RGB(116, 129, 130);
+}
+/*---------------------------------------- 
+# Team Section Custom Styles  
+------------------------------------------*/
+#team {
+  padding-block: 6.25rem;
+  background-color: var(--section-bg-grey-color);
+}
+#team header h2 {
+  margin-bottom: 5rem;
+  width: fit-content;
+  z-index: 1;
+}
+#team header h2::before {
+  content: "";
+  width: 100%;
+  height: 1.875rem;
+  background-image: url(./../images/dots.png);
+  background-repeat: repeat;
+  position: absolute;
+  left: 0;
+  bottom: -0.625rem;
+  z-index: -1;
+}
+#team .inner .card-content {
+  background-color: rgb(91, 91, 91);
+  padding: 1.5625rem;
+}
+#team .inner figure:first-child img {
+  transition: 0.5s transform;
+}
+#team .inner figure:first-child .overlay-layer {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.95);
+  left: 0.3125rem;
+  right: 0.3125rem;
+  top: 0.3125rem;
+  bottom: 0.3125rem;
+  opacity: 0;
+  transform: rotateY(180deg) scale(0.5);
+  transition: 0.5s all;
+}
+#team .inner figure:first-child:hover img {
+  transform: scale(1.2);
+}
+#team .inner figure:first-child:hover .overlay-layer {
+  transform: rotateY(360deg) scale(1);
+  opacity: 1;
+}
+#team .inner figure:first-child:hover .overlay-layer {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.95);
+  left: 0.3125rem;
+  right: 0.3125rem;
+  top: 0.3125rem;
+  bottom: 0.3125rem;
+  transition: 0.5s transform;
+}
+#team .inner figure:first-child .overlay-layer {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.95);
+  left: 0.3125rem;
+  right: 0.3125rem;
+  top: 0.3125rem;
+  bottom: 0.3125rem;
+}
+#team .inner figure:first-child .overlay-layer ul {
+  gap: 0.625rem;
+}
+#team .inner figure:first-child .overlay-layer ul li {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: black;
+  border: 0.0625rem solid black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#team .inner figure:first-child .overlay-layer ul li a {
+  color: var(--main-color);
+}
+#team .inner figure:first-child .overlay-layer ul li a i {
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+}
+#team .inner .card-content span {
+  margin-bottom: 0.3125rem;
+  font-family: "Montserrat-Medium", sans-serif;
+  font-size: 1.5625rem;
+  line-height: 1.7188rem;
+}
+#team .inner .card-content h3 {
+  font-family: "Montserrat-Bold", sans-serif;
+  font-size: 1.25rem;
+  margin: 0;
+  line-height: 1.375rem;
+}
+/*---------------------------------------- 
+# Contact Section Custom Styles  
+------------------------------------------*/
+#contact {
+  background-color: var(--main-color);
+  padding-block: 6.25rem;
+}
+#contact header h2 {
+  margin-bottom: 5rem;
+  width: fit-content;
+  z-index: 1;
+}
+#contact header h2::before {
+  content: "";
+  width: 100%;
+  height: 1.875rem;
+  background-image: url(./../images/dots.png);
+  background-repeat: repeat;
+  position: absolute;
+  left: 0;
+  bottom: -0.625rem;
+  z-index: -1;
+}
+#contact header + div > div > div {
+  margin-bottom: 3.125rem;
+}
+#contact header + div > div > div + form > div {
+  margin-bottom: 0.9375rem;
+}
+#contact .inner .icon {
+  width: 3.75rem;
+  height: 3.75rem;
+  border-radius: 50%;
+  background-color: rgb(244, 244, 244);
+  margin-bottom: 0.9375rem;
+  transition: 0.5s background-color;
+}
+#contact .inner .icon i {
+  font-size: 1.5625rem;
+  transition: 0.5s color;
+}
+#contact .inner:hover .icon {
+  background-color: var(--secondary-color);
+}
+#contact .inner:hover .icon i {
+  color: var(--main-color);
+}
+#contact .inner span {
+  margin-bottom: 0.625rem;
+  font-family: "Montserrat-Bold", sans-serif;
+  font-size: 1rem;
+}
+#contact .inner a {
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 0.9375rem;
+  color: RGB(116, 129, 130);
+}
+#contact form .inner * {
+  padding: 0.625rem;
+  width: 100%;
+  outline: none;
+  border: 0.0417rem solid transparent;
+  background-color: rgb(244, 244, 244);
+}
+#contact form .inner textarea {
+  max-height: 10rem;
+  height: 10rem;
+  resize: auto;
+  max-width: 100%;
+}
+/*---------------------------------------- 
+# Footer Section Custom Styles  
+------------------------------------------*/
+#footer {
+  background-color: var(--secondary-color);
+  padding: 1.875rem;
+}
+#footer p {
+  color: RGB(116, 129, 130);
+  font-size: 0.8125rem;
+}
