@@ -702,7 +702,7 @@ a {
 #team .inner figure:first-child:hover img {
   transform: scale(1.2);
 }
-#team .inner figure:first-child:hover .overlay-layer {
+#team .inner:hover figure:first-child .overlay-layer {
   transform: rotateY(360deg) scale(1);
   opacity: 1;
 }
