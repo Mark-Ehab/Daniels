@@ -366,6 +366,7 @@ a {
 }
 #about .inner p {
   margin-bottom: 1.875rem;
+  line-height: 1.5rem;
 }
 #about .inner p span {
   font-family: "Poppins-Bold", sans-serif;
@@ -389,6 +390,39 @@ a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+#about .progress-1 {
+  animation: progress-animation-1 1s forwards ease-in-out;
+}
+#about .progress-2 {
+  animation: progress-animation-2 1s forwards ease-in-out;
+}
+#about .progress-3 {
+  animation: progress-animation-3 1s forwards ease-in-out;
+}
+@keyframes progress-animation-1 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 95%;
+  }
+}
+@keyframes progress-animation-2 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 80%;
+  }
+}
+@keyframes progress-animation-3 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 90%;
+  }
 }
 /*---------------------------------------- 
 # Services Section Custom Styles  
