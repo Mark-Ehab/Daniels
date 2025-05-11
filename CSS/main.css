@@ -571,6 +571,13 @@ a {
   color: black;
   background-color: var(--main-color);
 }
+#works .modal {
+  --bs-modal-width: 100%;
+  overflow: hidden;
+}
+#works .modal-dialog {
+  margin-block: 0;
+}
 #works .modal-content {
   background-color: transparent;
   border: 0;
@@ -579,6 +586,18 @@ a {
 }
 #works .modal-header {
   border-bottom: 0;
+}
+#works .modal-body {
+  display: flex;
+  justify-content: center;
+}
+#works .carousel {
+  display: flex;
+  justify-content: center;
+  position: static;
+}
+#works .carousel-inner {
+  max-width: 37.5rem;
 }
 /*---------------------------------------- 
 # Clients Section Custom Styles  
